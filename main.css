@@ -1,0 +1,137 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(to top left, rgb(74, 74, 216), rgb(164, 164, 194));
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  header {
+    background: linear-gradient(to bottom right, #3498db, #2c3e50);
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+  
+  #take-tasks {
+    display: flex;
+  }
+  
+  #task-input {
+    flex: 1;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 3px;
+    margin-right: 10px;
+  }
+  
+  #task-submit {
+    padding: 10px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  #task-submit:hover {
+    background-color: #3e8e41;
+  }
+  
+  #task-list {
+    margin-top: 20px;
+  }
+  
+  .task {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-bottom: 10px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    animation: fadeIn 0.5s ease-in-out forwards;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .content {
+    flex: 1;
+  }
+  
+  .text {
+    width: 100%;
+    border: none;
+    font-size: 16px;
+    padding: 5px;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .text:focus {
+    outline: none;
+    border-color: #4caf50;
+  }
+  
+  .actions {
+    display: flex;
+  }
+  
+  .actions button {
+    background-color: transparent;
+    border: none;
+    color: #4caf50;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: color 0.2s ease-in-out;
+  }
+  
+  .actions button:hover {
+    color: #3e8e41;
+  }
+  
+  .done {
+    color: #4caf50;
+  }
+  
+  .done:hover {
+    color: #3e8e41;
+  }
+  
+  .edit {
+    color: #ffc107;
+  }
+  
+  .edit:hover {
+    color: #f57f17;
+  }
+  
+  .delete {
+    color: #f44336;
+  }
+  
+  .delete:hover {
+    color: #c62828;
+  }
+  
